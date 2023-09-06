@@ -1,4 +1,4 @@
-﻿//FIRST TASK
+﻿//first task
 Console.WriteLine("Enter number x:");
 int x;
 bool NumberX = int.TryParse(Console.ReadLine(), out x);
