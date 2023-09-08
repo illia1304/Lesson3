@@ -13,24 +13,18 @@ if(!NumberX || !NumberY)
     return;
 }
 
-int sum = 0;
+int sum = 0, temp = x;
 
 if (x == y)
     sum = x;
-else if(x > y)
+
+if (y < x)
 {
-    for(int i = y; i <= x; i++)
-    {
-        sum += i;
-    }
+    temp = y;
 }
-else
-{
-    for(int i = x; i <= y; i++)
-    {
-        sum += i;
-    }
-}
+
+for (int i = 0; i < temp; i++)
+    sum += i;
 
 Console.WriteLine(sum);
 
